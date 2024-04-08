@@ -1,0 +1,18 @@
+<div class="flex flex-col justify-center bg-white rounded-lg">
+    <div class="flex justify-center bg-blue-300">
+        <p class="text-center text-white p-8 text-xl lg:text-3xl">#{{data.pokemon.id}} {{ data.pokemon.name |
+            capitalizeFirst }}</p>
+    </div>
+    <div class="flex justify-center p-4 lg:py-8">
+        <div class="flex flex-col justify-center w-1/2">
+            <p class="text-center text-lg lg:text-xl">Peso: {{ data.pokemon.weight }}kg</p>
+        </div>
+        <div class="flex flex-col justify-center w-1/2">
+
+            <p *ngFor="let abilityList of data.pokemon.abilities; let i = index" class="text-center text-lg lg:text-xl">
+                Habilidad {{ i + 1 }}: {{ abilityList.ability.name | capitalizeFirst }}
+            </p>
+
+        </div>
+    </div>
+</div>

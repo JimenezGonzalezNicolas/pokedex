@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prev-page {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(43%) saturate(6351%)
+    hue-rotate(350deg) brightness(102%) contrast(91%);
+}
+
+.next-page {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(43%) saturate(6351%)
+    hue-rotate(350deg) brightness(102%) contrast(91%);
+}
